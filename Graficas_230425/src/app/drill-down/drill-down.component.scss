@@ -1,0 +1,30 @@
+.drill-down-container {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 20px;
+    min-height: 450px;
+    
+    ::ng-deep {
+        .highcharts-drilldown-axis-label {
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        
+        .highcharts-breadcrumbs-button {
+            fill: #f7f7f7;
+            stroke: #cccccc;
+            &:hover {
+                fill: #e6e6e6;
+            }
+        }
+
+        .highcharts-container {
+            width: 100% !important;
+            height: 100% !important;
+        }
+    }
+}
